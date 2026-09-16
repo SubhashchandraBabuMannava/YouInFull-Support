@@ -1,0 +1,29 @@
+name: Technical help or privacy question
+description: Ask about the app without sharing health or personal information.
+title: "[Help] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This is a public post.** Do not include health details, reports, identifying screenshots, passwords, credentials, or source record identifiers. Use synthetic descriptions. YouInFull is currently a development build, not an App Store release.
+  - type: input
+    id: version
+    attributes:
+      label: App and OS versions
+      description: Read the app version in Settings → About YouInFull. No device serial number is needed.
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: What were you trying to do?
+      description: Describe the action and result without your health content or personal identifiers.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before posting
+      options:
+        - label: I understand this post is public and have removed health content, personal identifiers and secrets.
+          required: true
