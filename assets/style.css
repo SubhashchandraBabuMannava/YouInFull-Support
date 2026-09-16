@@ -6,3 +6,5 @@
 @media(prefers-contrast:more){:root{--muted:#253d42;--line:#64766e}a{text-decoration-thickness:2px}summary{font-weight:700}}@media(prefers-contrast:more) and (prefers-color-scheme:dark){:root{--muted:#e5eeeb;--line:#859c93}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.button:active,button:active{transform:none}}
 @media print{body{background:#fff;color:#000}header,.maturity,.page-index,footer,.search,#search-status{display:none}.reading-layout,.support-layout{display:block}main{max-width:none;padding:0}h1{font-size:28pt}.reading>section{break-inside:avoid}a{color:#000}.contact{background:none}details:not([open])>.answer{display:block}summary:after{display:none}}
+
+.search input::placeholder{color:var(--muted);opacity:1}
